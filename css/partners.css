@@ -1,0 +1,27 @@
+.partners-section {
+  margin: 70px 0;
+  padding: 40px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.partners-section__description {
+  font-size: 1.5rem;
+}
+
+#partners-carousel {
+  max-width: 300px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--elements-color);
+}
+
+.partners-section__title {
+  font-size: 2rem;
+}

@@ -1,0 +1,125 @@
+.letter-subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 90px 0;
+  padding: 40px 0;
+}
+
+.letter-subscribe__form,
+.letter-subscribe__input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.letter-subscribe__header {
+  text-align: center;
+}
+
+.letter-subscribe__form-input {
+  background-color: var(--form-input-color);
+  border-radius: 40px;
+  border: 1px solid var(--decoration-color);
+  padding: 16px;
+}
+
+.letter-subscribe__text {
+  font-size: 2rem;
+}
+
+.letter-subscribe__title {
+  font-size: 1.5rem;
+}
+
+.letter-subscribe__form-subtext {
+  font-size: 1.3rem;
+}
+
+.letter-subscribe__form-button {
+  background-color: var(--elements-color);
+  padding: 15px 70px;
+  border-radius: 35px;
+  text-decoration: none;
+  color: var(--title-color-white);
+  cursor: pointer;
+  border: 1px solid var(--elements-color);
+  font-size: 1.2rem;
+}
+
+.letter-subscribe__form-button:hover {
+  background-color: var(--elements-hover);
+}
+
+.letter-subscribe__form-input {
+  margin: 0 10px 10px 0;
+}
+
+@media (min-width: 800px) {
+  .letter-subscribe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    margin: 100px 0;
+  }
+
+  .letter-subscribe__form-input {
+    margin: 0 10px 0 0;
+  }
+
+  .letter-subscribe__input-container {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .letter-subscribe__form-input {
+    flex: 1;
+  }
+
+  .letter-subscribe__form-button {
+    flex: 0.5;
+  }
+
+  .letter-subscribe__header {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+  }
+
+  .letter-subscribe__form {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .letter-subscribe__title {
+    font-size: 3rem;
+    padding: 0px;
+  }
+
+  .letter-subscribe__text {
+    font-size: 1.8rem;
+  }
+
+  .letter-subscribe__form-title {
+    font-size: 1.5rem;
+  }
+
+  .letter-subscribe__content-image {
+    grid-column: 1;
+    grid-row: span 2;
+  }
+
+  .letter-subscribe__content-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}

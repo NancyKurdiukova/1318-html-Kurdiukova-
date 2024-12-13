@@ -1,0 +1,32 @@
+.way-organization {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  margin: 50px;
+}
+
+.way-organization__description {
+  font-size: 1.5rem;
+}
+
+.way-organization__container > * {
+  margin: 10px 0;
+}
+
+@media (min-width: 800px) {
+  .way-organization__container {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .way-organization__image {
+    min-width: 370px;
+  }
+
+  way-organization {
+    padding: 100px 0;
+  }
+}

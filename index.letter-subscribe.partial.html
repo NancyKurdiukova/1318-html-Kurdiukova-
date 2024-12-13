@@ -1,0 +1,44 @@
+<section class="letter-subscribe">
+  <header class="letter-subscribe__header">
+    <h3 class="letter-subscribe__text">At your fingertips</h3>
+    <p class="letter-subscribe__title">
+      Lightning fast<br />
+      prototyping
+    </p>
+  </header>
+  <div class="letter-subscribe__content-image">
+    <img
+      class="letter-subscribe__image"
+      src="img/email-photo.png"
+      alt="Human with letter"
+    />
+  </div>
+  <form class="letter-subscribe__form">
+    <header class="letter-subscribe__form-header">
+      <h4 class="letter-subscribe__form-title">Subscribe to our Newsletter</h4>
+      <p class="letter-subscribe__form-subtext">
+        Available exclusively on Figmaland
+      </p>
+    </header>
+    <div class="letter-subscribe__input-container">
+      <label class="letter-subscribe__form-label" for="email-input"> </label>
+      <input
+        id="email-input"
+        class="letter-subscribe__form-input"
+        type="email"
+        placeholder="Your Email"
+        pattern="^\S+@\S+\.\S+$"
+        title="Please enter your email like this: example@mail.com"
+        required
+      />
+      <button
+        class="letter-subscribe__form-button"
+        type="submit"
+        value="subscribe"
+        name="button-letter-subscribe"
+      >
+        Subscribe
+      </button>
+    </div>
+  </form>
+</section>
