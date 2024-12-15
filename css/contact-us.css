@@ -1,0 +1,164 @@
+.contact-us {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.contact-us__title {
+  font-size: 3rem;
+}
+.contact-us__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contact-us__subtitle {
+  font-size: 1.5rem;
+}
+
+.contact-us__left {
+  display: grid;
+  margin: auto;
+  padding: 10px 5px;
+  grid-row: 2;
+}
+
+.contact-us__map {
+  display: none;
+}
+.contact-us__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: var(--title-color-white);
+  border: 1px solid #dddddd;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 370px;
+}
+
+.contact-us__form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 40px;
+  margin: 0;
+}
+
+.contact-us__input,
+.contact-us__textarea {
+  background-color: var(--form-input-color);
+  border: 1px solid var(--decoration-color);
+  min-width: 240px;
+}
+.contact-us__input {
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.contact-us__textarea {
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.contact-us__button {
+  background-color: var(--elements-color);
+  border-radius: 35px;
+  text-decoration: none;
+  color: var(--title-color-white);
+  cursor: pointer;
+  border: 1px solid var(--elements-color);
+  font-size: 1.2rem;
+  padding: 10px 45px;
+  margin-bottom: 20px;
+
+  &:hover {
+    background-color: var(--elements-hover);
+  }
+}
+
+.contact-us__social-link {
+  text-decoration: none;
+}
+
+.contact-us__location,
+.contact-us__number,
+.contact-us__email {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.contact-us__right > * {
+  padding: 20px;
+}
+.contact-us__social-links {
+  padding: 10px 0;
+  max-width: 340px;
+}
+
+.contact-us__location-icon,
+.contact-us__number-icon,
+.contact-us__email-icon {
+  padding: 5px;
+}
+
+.contact-us__location-text,
+.contact-us__number-text,
+.contact-us__email-text {
+  margin: auto 0;
+  font-size: 1.2rem;
+}
+
+.contact-us__right {
+  grid-row: 4;
+}
+
+.icon {
+  padding-left: 10px;
+}
+
+@media (min-width: 700px) {
+  .contact-us__subtitle br:first-child {
+    display: none;
+  }
+
+  .contact-us__map {
+    display: block;
+    max-width: 300px;
+    max-height: 200px;
+  }
+
+  .contact-us__location,
+  .contact-us__number,
+  .contact-us__email,
+  .contact-us__right,
+  .contact-us-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-us__left {
+    margin: auto;
+    padding: 10px 5px;
+  }
+
+  .contact-us__right {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 60px;
+  }
+
+  .contact-us__social-links {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .contact-us__title {
+    font-size: 2.5rem;
+  }
+}

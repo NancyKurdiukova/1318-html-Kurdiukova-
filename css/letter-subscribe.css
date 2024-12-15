@@ -117,9 +117,10 @@
   }
 
   .letter-subscribe__content-image img {
-    max-width: 100%;
+    width: 80%;
     height: auto;
     display: block;
     margin: 0 auto;
+    padding: 10px;
   }
 }
