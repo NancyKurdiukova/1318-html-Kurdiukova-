@@ -10,8 +10,8 @@ const navigationMenuListDecorations = document.querySelectorAll(
   ".navigation-menu__list--decoration"
 );
 const heroSectionContent = document.querySelector(".hero-section__content");
+
 navigationButtonPhone.addEventListener("click", () => {
-  document.body.style.overflow = "hidden";
   navigationMenuPhone.classList.toggle("active");
   navigationMenuListPhone.classList.toggle("active");
   navigationMenuLinks.forEach((link) => link.classList.toggle("active"));
@@ -22,28 +22,19 @@ navigationButtonPhone.addEventListener("click", () => {
   navigationButtonPhone.classList.toggle("active");
 });
 
-navigationMenuLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    document.body.style.overflow = "auto";
-  });
-});
-
 const mediaQuery = window.matchMedia("(min-width: 800px)");
-
 function handleMediaQueryChange(e) {
   if (e.matches) {
-    document.body.style.overflow = "auto";
     heroSectionContent.classList.remove("active");
+    heroSectionContent.classList.remove("active");
+    navigationMenuPhone.classList.remove("active");
+    navigationMenuListPhone.classList.remove("active");
+    navigationMenuLinks.forEach((link) => link.classList.remove("active"));
+    navigationMenuListDecorations.forEach((decoration) =>
+      decoration.classList.remove("active")
+    );
+    navigationButtonPhone.classList.remove("active");
   }
-  document.body.style.overflow = "auto";
-  heroSectionContent.classList.remove("active");
-  navigationMenuPhone.classList.remove("active");
-  navigationMenuListPhone.classList.remove("active");
-  navigationMenuLinks.forEach((link) => link.classList.remove("active"));
-  navigationMenuListDecorations.forEach((decoration) =>
-    decoration.classList.remove("active")
-  );
-  navigationButtonPhone.classList.remove("active");
 }
 
 mediaQuery.addEventListener("change", handleMediaQueryChange);
